@@ -1,0 +1,22 @@
+<!DOCTYPE <html>
+</html Lang ="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>03 - Introdução | DOM getElementbyID</title>
+</head>
+
+<body>
+   <div id="mensagem">
+    </div>
+
+     <script>
+      var p = document.createElement("p")
+      var p1 = document.createElement("p")
+      var idMensage = document.getElementById("mensagem")
+      p.innerHTML = "Olá mundo"
+      p1.innerHTML = "Olá universo"
+      idMensage.appendChild(p);
+      idMensage.appendChild(p1);
+     </script>
+</body>
