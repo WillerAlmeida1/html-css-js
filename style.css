@@ -1,12 +1,12 @@
 body {
-    background-color: crimson;
+    background-color: whitesmoke;
 }
 
 .textinho_besta {
-    color: darkgray;
-    font-size: 51px;
-    font-family: cursive;
-    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family:monospace;
+    text-align: left;
 }
 
 .chora {
@@ -24,3 +24,8 @@ body {
     border: black, solid;
     border-radius: 35px;
 }
+
+.cit {
+    font-size: 18px;
+}
+
