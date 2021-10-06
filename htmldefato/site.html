@@ -8,23 +8,51 @@
     <body>
         <!--Navegação :D-->
         <nav class="navigation">
-            <div class="navigation-inner">
+            <div class="navigation-inner site-container">
                 <img id="logo">
                 <div class="main-navigation">
                     <ul class="main-navigation-ul">
-                        <li><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">4</a></li>
-                        <li><a href="">5</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Sobre nós</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="">Projetos</a></li>
+                        <li><a href="">Trabalhe conosco</a></li>
                     </ul>
                 </div>
-                <div class="btnBurguer" class="burguer-container">
+                <div id="btnBurguer" class="burguer-container" onclick="menuFn(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
+                <script>
+                    function menuFn(x) {
+                        x.classList.toggle("change");
+                    }
+                </script>
             </div>
         </nav>
+
+        <section>
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                        <h2></h2>
+                    </div>
+                    <div>
+                        <span></span>
+                        <h2></h2>
+                    </div>
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
