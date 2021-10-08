@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA=Compatible" content="ie=edge">
+    <title>JavaScript</title>
+
+</head>
+
+<body>
+    <script>
+
+        //Criando um objeto e atribuindo valores a ele
+        let guarda_roupas = {
+            gavetas: "São 6 e todas De madeira",
+            roupas: "Bastante espaço para Roupas",
+            espelho: "2"
+        };
+
+        let computador = {
+            placa_de_video: "Sim, RX570 8GB OC",
+            processador: "I3 9º Geração",
+            memoria_ram: "8GB",
+            armazenamento: "1TB"
+        };
+
+        let carro = {
+
+            rodas: 4,
+            portas: 4,
+            funcionando: "sim",
+            nome_carro: "Versa",
+            ano: 2011,
+            aVenda: false
+        };
+        //Adicionando novos objetos dentro de um objeto e alterando dados que já estão no objeto :o
+        carro.ano = 2012;
+        carro.local = "PB";
+
+        //Como fazer novas funções
+        let ola = function () {
+            console.log("1");
+            console.log(" ");
+            console.log("2");
+        }
+        //para chamar essas funções use sempre o "();"
+        ola();
+
+        //Outro método para se criar funções
+        function ola2() {
+            console.log("2");
+            console.log(" ");
+            console.log("5");
+        }
+        ola2();
+
+        function revisao(valor1, valor2, valor3) {
+
+            let outroValor = valor1 + 2;
+
+            let maisUm = valor2 + valor3;
+
+
+            //             zero     2   "5"zero    "5"        4 
+            let vetor = [valor3, valor1, maisUm, valor2, outroValor];
+
+
+//                                      5zero                       
+            console.log(`A soma de ${vetor[2]} está certa? Ou ${vetor[1] + 2} = ${vetor[4]} parece melhor?`);
+
+        }
+
+
+
+        revisao(2, "5", "zero");
+
+    </script>
+</body>
