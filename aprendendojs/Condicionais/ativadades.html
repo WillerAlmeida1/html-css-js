@@ -165,6 +165,48 @@
                 console.log("erro");
             }
         }
-        
+
+        //DIGA QUEM PASSOU E NAO PASSOU MINIMO 7
+        let alunos = [
+            {
+                nome:"Willer",
+                nota: 10
+            },
+
+            {
+                nome:"Ingrid",
+                nota: 10
+            },
+
+            {
+                nome:"Paulo",
+                nota: 5
+            },
+
+            {
+                nome:"Bianca",
+                nota: 6
+            },
+
+            {
+                nome:"Clara",
+                nota: 7
+            },
+
+            {
+                nome:"Ana",
+                nota: 2
+            },
+        ]
+            for(let i = 0; i < alunos.length; i++){
+              if(alunos[i].nota >= 7){
+                  console.log(`${alunos[i].nome} : passou`);
+              } else {
+                  console.log(`${alunos[i].nome}: reprovado`)
+              }
+                
+            }
+
+
     </script>
 </body>
