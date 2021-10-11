@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA=Compatible" content="ie=edge">
+    <title>JavaScript</title>
+
+</head>
+<body>
+    <script>
+
+        //ATIVIDADE PARA ALTERAR PROPRIEDADES DO CARRO!
+
+         function mudarPropriedade(nomePropriedade, novoValor) {
+            switch (nomePropriedade) {
+                // O case rodas é um exemplo para as próximas partes
+                case "rodas":
+                    if (novoValor > 1) {
+                        carro.rodas = novoValor;
+                    }
+                    else {
+                        return "Minimo de rodas precisa ser 2";
+                    }
+                    break;
+                case "portas":
+                    // Para alterar as portas, é necessário que o
+                    // novo valor seja maior que 0
+                    // senão deve retornar a string "Minimo de portas precisa ser 1"
+                    if (novoValor > 0) {
+                        carro.portas = novoValor;
+                    }
+                    else {
+                        return "Minimo de portas precisa ser 1";
+                    }
+                    break;
+                case "cor":
+                    // para alterar a cor, novo valor pode ser igual a cinza ou preto ou vermelho
+                    // se for diferente, retornar "Cor invalida"
+                    carro.cor = novoValor;
+                    if (novoValor == "cinza" || novoValor == "preto" || novoValor == "vermelho") {
+                    } else {
+                        return "Cor invalida";
+                    }
+
+                    break;
+                case "ano":
+                    carro.ano = novoValor;
+
+                    if (novoValor == 2019) {
+                        carro.estado = "novo";
+                    } else {
+                        carro.estado = "usado";
+                    }
+
+                    break;
+                // criar um case para o "ano"
+                // alterar o ano do carro para o ano informado
+                // se o ano for igual a 2019, alterar o estado para "novo" 
+                // senao alterar o estado para "usado"
+                default:
+                    // retornar a fraase "Propriedade invalida";
+                    return "Propriedade invalida";
+            }
+
+            // retornar a frase Alteracao concluida somente se foi possivel
+            // alterar um dado do objeto.
+            return "Alteracao concluida";
+        }
+        //=================================================================================================
+
+        //ATIVIDADE PARA USO DE IF E ELSES
+        //CRIANDO CONDICIONAIS
+        function testarTamanho(valor) {
+            if(valor > 15){
+                console.log("maior");
+                
+            } else if (valor < 3){
+                console.log("menor");
+                
+            } else if (valor >= 3 && valor <= 15) {
+                console.log("na faixa");
+                
+            }else {
+                console.log("Fora de escopo");
+            }
+        }
+
+        //MOEDAS, usando if,else e switch
+        
+        let simbolo1 = "R$";
+        let simbolo2 = "$";
+        let simbolo3 = "£";
+        let vetor = ["R$", "$", "£"];
+
+        if (simbolo1 == "R$") {
+            console.log("Real")
+        } else {
+            console.log("Erro :c")
+        }
+
+        if (simbolo2 == "$") {
+            console.log("Dólar")
+        } else {
+            console.log("Erro :c")
+        }
+
+        if (simbolo3 == "£") {
+            console.log("Euro")
+        } else {
+            console.log("Erro :c")
+        }
+        console.log("------------")
+
+        switch (vetor[0]) {
+            case "R$":
+                console.log("Real");
+                break;
+            case "$":
+                console.log("Dólar");
+                break;
+            case "£":
+                console.log("Euro");
+                break;
+            default:
+                console.log("abababa")
+                break;
+        }
+        console.log("----------")
+        switch (simbolo1) {
+            case "R$":
+                console.log("Real");
+        }
+
+        switch (simbolo2) {
+            case "$":
+                console.log("Dólar");
+        }
+
+        switch (simbolo3) {
+            case "£":
+                console.log("Euro");
+        }
+
+        //USANDO E TESTANDO CONDICIONAIS
+
+        let objetoServidor = {
+            acesso: true,
+            login: "mundojs",
+        };
+
+        let objetoServidor2 = {
+            acesso: false,
+            erro: "Erro ao Conectar nos servidor"
+        };
+
+        function conexaoLogin(Resposta_Do_Servidor) {
+            if (objetoServidor.login == "mundojs") {
+                console.log("Login: mundojs")
+            
+            } else if (objetoServidor2.acesso == false) {
+                console.log("Acesso Negado")
+
+            } else {
+                console.log("erro");
+            }
+        }
+        
+    </script>
+</body>
