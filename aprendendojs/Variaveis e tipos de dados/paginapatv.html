@@ -10,25 +10,20 @@
 
 <body>
     <script>
-        let objetoServidor = {
-            acesso: true,
-            login: "mundojs",
-        };
+        /*function fibonacci(n){
+            for(let i = 0; i < fibonacci(n); i + 2){
+                console.log(`${fibonacci(1)} fh:`);
+            }
+        
+        }
+        */
 
-        let objetoServidor2 = {
-            acesso: false,
-            erro: "Erro ao Conectar nos servidor"
-        };
+        function fibonacci(n) {
+            let fibonacci = 0;
 
-        function conexaoLogin(Resposta_Do_Servidor) {
-            if (objetoServidor.login == "mundojs") {
-                console.log("Login: mundojs")
-            
-            } else if (objetoServidor2.acesso == false) {
-                console.log("Acesso Negado")
-
-            } else {
-                console.log("erro");
+            while (num < 20) {
+                console.log("Valor:" + fibonacci);
+                num = num + 2;
             }
         }
     </script>
