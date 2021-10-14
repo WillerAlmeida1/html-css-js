@@ -7,12 +7,13 @@
     <title>JavaScript</title>
 
 </head>
+
 <body>
     <script>
 
         //ATIVIDADE PARA ALTERAR PROPRIEDADES DO CARRO!
 
-         function mudarPropriedade(nomePropriedade, novoValor) {
+        function mudarPropriedade(nomePropriedade, novoValor) {
             switch (nomePropriedade) {
                 // O case rodas é um exemplo para as próximas partes
                 case "rodas":
@@ -72,22 +73,22 @@
         //ATIVIDADE PARA USO DE IF E ELSES
         //CRIANDO CONDICIONAIS
         function testarTamanho(valor) {
-            if(valor > 15){
+            if (valor > 15) {
                 console.log("maior");
-                
-            } else if (valor < 3){
+
+            } else if (valor < 3) {
                 console.log("menor");
-                
+
             } else if (valor >= 3 && valor <= 15) {
                 console.log("na faixa");
-                
-            }else {
+
+            } else {
                 console.log("Fora de escopo");
             }
         }
 
         //MOEDAS, usando if,else e switch
-        
+
         let simbolo1 = "R$";
         let simbolo2 = "$";
         let simbolo3 = "£";
@@ -157,7 +158,7 @@
         function conexaoLogin(Resposta_Do_Servidor) {
             if (objetoServidor.login == "mundojs") {
                 console.log("Login: mundojs")
-            
+
             } else if (objetoServidor2.acesso == false) {
                 console.log("Acesso Negado")
 
@@ -169,43 +170,94 @@
         //DIGA QUEM PASSOU E NAO PASSOU MINIMO 7
         let alunos = [
             {
-                nome:"Willer",
+                nome: "Willer",
                 nota: 10
             },
 
             {
-                nome:"Ingrid",
+                nome: "Ingrid",
                 nota: 10
             },
 
             {
-                nome:"Paulo",
+                nome: "Paulo",
                 nota: 5
             },
 
             {
-                nome:"Bianca",
+                nome: "Bianca",
                 nota: 6
             },
 
             {
-                nome:"Clara",
+                nome: "Clara",
                 nota: 7
             },
 
             {
-                nome:"Ana",
+                nome: "Ana",
                 nota: 2
             },
         ]
-            for(let i = 0; i < alunos.length; i++){
-              if(alunos[i].nota >= 7){
-                  console.log(`${alunos[i].nome} : passou`);
-              } else {
-                  console.log(`${alunos[i].nome}: reprovado`)
-              }
-                
+        for (let i = 0; i < alunos.length; i++) {
+            if (alunos[i].nota >= 7) {
+                console.log(`${alunos[i].nome} : passou`);
+            } else {
+                console.log(`${alunos[i].nome}: reprovado`)
             }
+
+        }
+        //FIBONACCI, ainda não entendi 100% do exercicio e como usar tudo
+        //mas estou estudando loops/laços de repetição e como manipular os mesmos
+        //com as variaveis.
+
+
+        function fibonacci(n) {
+            if (n < 2) {
+                return n;
+            }
+            let anterior = 1;
+            let penultimo = 0;
+
+            for (let i = 2; i <= n; i++) {
+                if (i == n) {
+                    return penultimo + anterior;
+                }
+                let temp = penultimo;
+                penultimo = anterior;
+                anterior = temp + penultimo;
+            }
+        }
+
+        //multiplique apenas numeros maiores doq 5
+
+
+        function calcularVetor(vetor, numero) {
+            for (let i = 0; i < vetor.length; i++) {
+                if (vetor[i] > 5) {
+                    vetor[i] = vetor[i] * numero;
+                }
+            }
+            return vetor;
+        }
+        function somarSubVetores(vetor) {
+            let resultado = [];
+
+            for (let ind = 0; ind < vetor.length; ind++) {
+                let subvet = vetor[ind];
+                let soma = 0;
+
+                for (let subind = 0; subind < subvet.length; subind++) {
+                    soma = soma + subvet[subind];
+                }
+                resultado[ind] = soma;
+            }
+            return resultado;
+        }
+
+
+
+
 
     </script>
 </body>
