@@ -23,3 +23,24 @@
 .parceiros {
   background-color: #283747;
 }
+
+#servicos {
+  background-color: #D0D3D4;
+  border-radius: 10px;
+}
+
+.texto {
+  justify-content: center;
+  font: 15px arial, sans-serif;
+}
+
+.bg-footer {
+  background-color: #D0D3D4;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.margem2 {
+  padding-bottom: 20px;
+}
+
